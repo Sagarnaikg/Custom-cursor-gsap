@@ -2,12 +2,20 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 100;
+  z-index: 10;
   contain: layout style size;
   pointer-events: none;
-  mix-blend-mode: exclusion;
+
+  .blend-mode {
+    z-index: 100;
+    mix-blend-mode: exclusion;
+    .cursor-media {
+      filter: invert(1);
+    }
+  }
 
   &::before {
+    z-index: 10;
     content: "";
     position: absolute;
     top: -30px;
@@ -21,10 +29,10 @@
   }
 
   .cursor-media {
-    filter: invert(1);
     display: block;
     height: 350px;
     width: 350px;
+    z-index: 100;
     overflow: hidden;
     border-radius: 100%;
     transform: scale(0);

@@ -54,10 +54,12 @@ export default class Cursor {
   onScaleMouse() {
     this.Item.forEach((link) => {
       link.addEventListener("mouseenter", (e) => {
+        this.Cursor.classList.add("blend-mode");
         this.selectElement(link, 0.4);
       });
 
       link.addEventListener("mouseleave", (e) => {
+        this.Cursor.classList.remove("blend-mode");
         this.selectElement(link, 0);
       });
 
