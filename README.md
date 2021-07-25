@@ -3,7 +3,10 @@
 
 Custom cursor animation using parcel bundler and gsap for animation
 
+Click here to [live demo](https://sagarnaikg.github.io/Custom-cursor-gsap/)
 
+## Demo
+<img src="https://github.com/Sagarnaikg/sagarnaikg/blob/main/assets/custom-cusror.gif" />
 
   
 ## Tech Stack
